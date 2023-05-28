@@ -1,17 +1,21 @@
 {
   "name": "boilermaker",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack -w & nodemon server"
+    "build": "webpack",
+    "start-dev": "webpack -w & nodemon server --ignore src/ --ignore dist/"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.22.2",
     "@reduxjs/toolkit": "^1.9.5",
     "bcrypt": "^5.1.0",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "less-watch-compiler": "^1.16.3",
     "pg": "^8.11.0",
     "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
@@ -28,9 +32,5 @@
     "nodemon": "^2.0.22",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }

@@ -2,10 +2,9 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-
-app.use(express.static(path.join(__dirname, '..', 'public')));
-
-//put the rest of the middlerware here (json parsing, error handling, etc)
+app.use(express.json());
+app.use('/dist', express.static('dist'));
+//put the rest of the middlerware here (error handling, etc)
 
 
 app.get('*', function(req, res, next){

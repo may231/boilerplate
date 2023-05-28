@@ -1,6 +1,7 @@
 module.exports = {
     mode: "development",
-    entry: [
+    devtool: 'source-map',
+    /*entry: [
         './client/index.js'
       ],
       output: {
@@ -13,11 +14,11 @@ module.exports = {
         static: {
           directory: __dirname + "/public",
         },
-      },
+      },*/
     module: {
       rules: [
         {
-          test: /jsx?$/,
+          test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
           options: {
