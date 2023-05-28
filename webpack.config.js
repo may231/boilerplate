@@ -1,20 +1,6 @@
 module.exports = {
     mode: "development",
     devtool: 'source-map',
-    /*entry: [
-        './client/index.js'
-      ],
-      output: {
-        path: __dirname,
-        filename: './public/bundle.js'
-      },
-      context: __dirname,
-      devtool: "source-map",
-      devServer: {
-        static: {
-          directory: __dirname + "/public",
-        },
-      },*/
     module: {
       rules: [
         {
